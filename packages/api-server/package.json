@@ -1,5 +1,5 @@
 {
-  "name": "@redwoodjs/api-server",
+  "name": "@jovancahiles/api-server",
   "version": "7.0.0",
   "description": "Redwood's HTTP server for Serverless Functions",
   "repository": {
