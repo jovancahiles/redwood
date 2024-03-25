@@ -129,7 +129,7 @@ export async function createServer(options: CreateServerOptions = {}) {
     const { __rw_graphqlOptions } = await import(
       `file://${graphqlFunctionPath}`
     )
-
+    server.addContentTypeParser('multipart/form-data', {}, (req, payload, done) => done(null));
     await server.register(redwoodFastifyGraphQLServer, {
       redwood: {
         apiRootPath,
